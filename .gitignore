@@ -1,10 +1,2 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/bin/Debug/net6.0
-/.vs/USer Customer Management System
-/obj
-
-/appsettings.Development.json
-/appsettings.json
+/.vs
+/bin

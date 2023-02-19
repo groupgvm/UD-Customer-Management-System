@@ -9,7 +9,7 @@
     }
   },
   "profiles": {
-    "USer_Customer_Management_System": {
+    "User_Customer_Management_System": {
       "commandName": "Project",
       "dotnetRunMessages": true,
       "launchBrowser": true,
