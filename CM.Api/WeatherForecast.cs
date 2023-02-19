@@ -1,4 +1,4 @@
-namespace USer_Customer_Management_System
+namespace CM.Api
 {
     public class WeatherForecast
     {
