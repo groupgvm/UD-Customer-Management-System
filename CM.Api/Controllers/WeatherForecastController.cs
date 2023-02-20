@@ -1,7 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
+using CM.Middleware;
 
 namespace CM.Api.Controllers
 {
+    [ApiRequestAuthenticator]
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
