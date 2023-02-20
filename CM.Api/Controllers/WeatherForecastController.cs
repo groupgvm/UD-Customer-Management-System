@@ -3,8 +3,8 @@ using CM.Middleware;
 
 namespace CM.Api.Controllers
 {
-    [ApiRequestAuthenticator]
     [ApiController]
+    [ApiRequestAuthenticator]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
