@@ -1,5 +1,7 @@
 /.vs
 /bin
+
 appsettings.json
 obj
 /CM.Middleware/bin/Debug/net6.0
+
