@@ -1,3 +1,5 @@
+using CM.Middleware;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +18,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseMiddleware<GlobalErrorHandler>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
