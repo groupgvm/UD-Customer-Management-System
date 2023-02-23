@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Http;
-using System.Globalization;
+﻿#define DEBUG
+#define RELEASE
+
+using Microsoft.AspNetCore.Http;
 using System.Net;
 using System.Text.Json;
 
@@ -33,23 +35,21 @@ namespace CM.Middleware
                     case KeyNotFoundException e:
                         response.StatusCode = (int)HttpStatusCode.NotFound;
                         break;
+                    case UnauthorizedAccessException e:
+                        response.StatusCode = (int)HttpStatusCode.Unauthorized;
+                        break;
                     default:
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;
                         break;
                 }
-
+#if DEBUG
                 var result = JsonSerializer.Serialize(new { message = error?.Message });
                 await response.WriteAsync(result);
+#else
+                  var result = JsonSerializer.Serialize(new { message = error?.Message });
+                await response.WriteAsync(result);
+#endif
             }
         }
-    }
-
-    public class CustomException : Exception
-    {
-        public CustomException() : base() { }
-        public CustomException(string message) : base(message) { }
-        public CustomException(string message, Exception innerException) : base(message, innerException) { }
-        public CustomException(string message, params object[] args)
-        : base(String.Format(CultureInfo.CurrentCulture, message, args)) { }
     }
 }
