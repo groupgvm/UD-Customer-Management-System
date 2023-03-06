@@ -4,11 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>USer_Customer_Management_System</RootNamespace>
+    <RootNamespace>User_Customer_Management_System</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CM.Middleware\CM.Middleware.csproj" />
   </ItemGroup>
 
 </Project>

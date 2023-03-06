@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using CM.Middleware;
 
 namespace CM.Api.Controllers
 {
