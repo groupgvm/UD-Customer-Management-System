@@ -1,9 +1,14 @@
 ﻿
-using Microsoft.AspNetCore.Mvc;
+/**
+ * This attribute is not used. Another middleware has been  introduced  for authentication.
+ * 
+ * 
+ * **/
+
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System.Text.Json;
+
 
 namespace CM.Middleware
 {

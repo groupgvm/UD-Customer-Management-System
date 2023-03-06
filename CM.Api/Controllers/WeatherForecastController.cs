@@ -4,7 +4,6 @@ using CM.Middleware;
 namespace CM.Api.Controllers
 {
     [ApiController]
-    [ApiRequestAuthenticator]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
