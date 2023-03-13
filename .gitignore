@@ -5,3 +5,6 @@ appsettings.json
 obj
 /CM.Middleware/bin/Debug/net6.0
 
+/CM.DbModel/bin/Debug/net6.0
+/CM.Domain/bin/Debug/net6.0
+/CM.Domain.Services/bin/Debug/net6.0

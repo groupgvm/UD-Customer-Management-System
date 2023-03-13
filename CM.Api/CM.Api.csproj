@@ -8,10 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CM.Common.Services\CM.Common.Services.csproj" />
     <ProjectReference Include="..\CM.Middleware\CM.Middleware.csproj" />
   </ItemGroup>
 

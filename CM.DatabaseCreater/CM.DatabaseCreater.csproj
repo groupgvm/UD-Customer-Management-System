@@ -1,15 +1,15 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <OutputType>Exe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CM.Common.Services\CM.Common.Services.csproj" />
-    <ProjectReference Include="..\CM.DbModel\CM.DbModel.csproj" />
-    <ProjectReference Include="..\CM.Domain\CM.Domain.csproj" />
+    <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.32.1" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="7.0.0" />
   </ItemGroup>
 
 </Project>
