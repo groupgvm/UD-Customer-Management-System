@@ -8,3 +8,4 @@ obj
 /CM.DbModel/bin/Debug/net6.0
 /CM.Domain/bin/Debug/net6.0
 /CM.Domain.Services/bin/Debug/net6.0
+/CM.DatabaseCreater/bin/Debug/net6.0

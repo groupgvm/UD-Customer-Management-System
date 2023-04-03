@@ -1,4 +1,6 @@
 ﻿using CM.DatabaseCreater;
+using System.Configuration;
+using CM.DatabaseCreater;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,11 +15,11 @@ var app = builder.Build();
 
 
 
-app.UseHttpsRedirection();
+app.MapGet("/", async 
+    () => { return await new CosmosService(configuration).CreateContainers() });
 
-app.UseAuthorization();
 
-app.MapControllers();
+
 
 app.Run();
 

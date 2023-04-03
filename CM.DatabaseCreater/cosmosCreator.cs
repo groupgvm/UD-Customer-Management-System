@@ -27,6 +27,7 @@ namespace CM.DatabaseCreater
 
             // Add new containers here
             containers.Add(("Customer", "/id", 400));
+            containers.Add(("User", "/id", 400));
 
             foreach(var container in containers)
             {
